@@ -22,6 +22,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
      
+        // Get File URL to open it on Realm Studio for reading and editing databases
+        print("fileURL: \(Realm.Configuration.defaultConfiguration.fileURL!)")
+        
         if(countries.isEmpty) {
             addCountriesFirstTime()
         }
