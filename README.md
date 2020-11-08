@@ -59,7 +59,6 @@ let realm = try! Realm()
 # 6- Update Data
 ```
  let countries = realm.objects(Country.self).filter("id = \(id)")
-        let realm = try! Realm()
         if let country = countries.first {
             try! realm.write {
                 country.isFav = isFav
